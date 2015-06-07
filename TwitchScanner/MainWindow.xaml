@@ -1,0 +1,36 @@
+﻿<Window x:Class="TwitchScanner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Twitch Bot" Height="550" Width="577">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Twitch Bot" VerticalAlignment="Top" FontSize="20" Margin="10,10,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Channel: (twitch.tv/)" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox HorizontalAlignment="Left" Margin="138,39,0,0" VerticalAlignment="Top" Width="220" Name="text_channel">
+            <ComboBoxItem Name="flosd">flosd</ComboBoxItem>
+            <ComboBoxItem Name="amsterdamster">amsterdamster</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" Text="Nickname:" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox HorizontalAlignment="Left" Margin="138,69,0,0" VerticalAlignment="Top" Width="220" Name="text_nickname">
+            <ComboBoxItem Name="p1">P1raten</ComboBoxItem>
+            <ComboBoxItem Name="amster">AmsterdamsterBot</ComboBoxItem>
+        </ComboBox>
+        <!--<TextBox HorizontalAlignment="Left" Height="23" Margin="138,69,0,0" TextWrapping="Wrap" Text="P1raten" VerticalAlignment="Top" Width="220" Name="text_nickname"/>-->
+        <TextBlock HorizontalAlignment="Left" Margin="10,98,0,0" TextWrapping="Wrap" Text="Password: (oauth)" VerticalAlignment="Top" FontSize="14"/>
+        <PasswordBox HorizontalAlignment="Left" Height="23" Margin="138,97,0,0" VerticalAlignment="Top" Width="220" Name="text_password" Password="oauth:"/>
+        <Button Content="Start Bot" HorizontalAlignment="Left" Margin="430,39,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,126,0,0" TextWrapping="Wrap" Text="Debug Information:" VerticalAlignment="Top" FontSize="14" FontWeight="Medium"/>
+        <RichTextBox VerticalContentAlignment="Stretch" HorizontalAlignment="Left" Margin="10,150,0,0" Name="debug_info" Padding="1,0" VerticalScrollBarVisibility="Visible">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Welcome to Twitch Bot!" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Create Database" HorizontalAlignment="Left" Margin="377,70,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click_1" IsEnabled="False"/>
+        <Button Content="Update DB" HorizontalAlignment="Left" Margin="489,70,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_2" />
+        <ComboBox HorizontalAlignment="Left" Margin="138,98,0,0" VerticalAlignment="Top" Width="220" Name="password">
+            <ComboBoxItem Name="p1raten">oauth:</ComboBoxItem>
+            <ComboBoxItem Name="amsterdamsterbot">oauth:</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
