@@ -1,5 +1,7 @@
 # BoxBoxBotBot
-A bot to counter the BoxBoxBot found on [BoxBox Twitch Channel](http://www.twitch.tv/flosd).
+A bot to counter the BoxBoxBot found on [BoxBox Twitch Channel](http://www.twitch.tv/flosd). 
+
+He now has a new channel [here](https://www.twitch.tv/boxbox).
 
 # What does it do
 It just captures every question that BoxBoxBot asks. 
